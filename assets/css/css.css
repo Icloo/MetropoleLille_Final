@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Knewave';
+}
+
+#map {
+    height: 80vh;
+    position: relative;
+    width: 100vw;
+
+}
+
+.tout {
+    width: 100vw;
+}
+
+#restau {
+    position: absolute;
+    bottom: 20vh;
+    width: 100vw;
+    z-index: 999;
+    background: #F27373;
+    display: flex;
+    
+}
+
+.emplacementphoto {
+    
+    width: 30vw;
+    padding: 0 0 0 5rem;
+}
+
+
+
+.photo {
+    
+    width: 80%;
+    height: 66%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.desc {
+
+    width: 30vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    color: white;
+}
+
+.enregistrer {
+    position: relative;
+    
+    width: 20vw;
+}
+
+#boutonenregistrer {
+    position: absolute;
+    top: 3vh;
+    border-radius: 5px;
+    color: #A94A4A;
+    background :rgba(255, 255, 255, 0.83);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+
+    margin-left: 16.5%;
+    margin-right: 16.5%;
+    font-size: xx-large;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    font-family: 'Knewave';
+}
+
+#boutonenregistrer:hover {
+    background-color: #A94A4A;
+    color: white;
+    transform: translate(-1px,-1px);
+    box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.50);
+    transition: all 0.5s;
+}
+
+.fermer {
+    
+    width: 20vw;
+    position: relative;
+}
+
+#croixfermer {
+    position: absolute;
+    top: 3vh;
+    right: 1vw;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#croixfermer:hover {
+    transform: translate(-1px,-1px);
+    
+}
+
+
+.bandeau {
+    display: flex;
+    height: 20vh;
+    
+}
+
+#carte {
+    width: 49.8vw;
+    text-align: center;
+    font-size: xx-large;
+    color: #E72E2E;
+    border-right: 1px solid black;    
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#carte:hover {
+    background-color: #E72E2E;
+    color: white;
+}
+
+#favoris {
+    width: 50vw;
+    text-align: center;
+    font-size: xx-large;
+    color: rgba(231, 46, 46, 0.5);
+    border-left: 1px solid black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+a {
+    color: rgba(231, 46, 46, 0.5); ;
+    text-decoration: none;
+}
+
+a:active {
+    color: rgba(231, 46, 46, 0.5);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgba(231, 46, 46, 0.5);
+    text-decoration: none;
+}
+
+
+#favoris:hover {
+    background-color: rgba(231, 46, 46, 0.5); ;
+    color: white;
+    
+}
+
+#afficherfav {
+    height: 80vh;
+    overflow: scroll;
+}
+
+#restaufav {
+
+    bottom: 20vh;
+    width: 100vw;
+    z-index: 999;
+    background: #F27373;
+    display: flex;
+    
+}
+
+@media only screen and (max-width: 992px) {
+
+    #restau {
+        display : flex;
+        flex-direction: column-reverse;
+        height: 80vh;
+        width: 100vw;
+    }
+
+    #restaufav {
+        display: flex;
+        flex-direction: column-reverse;
+        overflow: scroll;
+        
+    }
+
+    .emplacementphoto {
+        width: 100vw;
+        height: 20vh;
+        padding: 0 0 0 0rem;
+        margin-top: 25%;
+        margin-bottom: 10%;
+    }
+
+
+    .desc {
+        width: 100vw;
+       
+        margin-bottom: 0vh;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-top: 0vh;
+        padding-bottom: 0vh;
+    }
+
+    .enregistrer {
+        width: 100vw;
+        height: 15vh;
+    
+    }
+
+    .fermer {
+        width: 100vw;
+        height: 15vh;
+        margin-bottom: 10%;
+    }
+
+    .photo {
+    
+        width: 75%;
+        height: 100%;
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+
+    .bandeau {
+        display: flex;
+        height: 20vh;
+        width: 100vw;
+        
+    }
+
+    .tout {
+        width: 100vw;
+    }
+
+    body {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+    
+
+}
