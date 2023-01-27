@@ -46,7 +46,7 @@ let restau = document.getElementById('afficherrestau');
                 div.appendChild(divcroix);
                 let photolieu = document.createElement('img');
                 photolieu.className = "photo";
-                photolieu.setAttribute('src','../Starter kit/assets/image/photorestau.jpg');
+                photolieu.setAttribute('src','assets/image/photorestau.jpg');
                 divphoto.appendChild(photolieu);
                 let titredescription = document.createElement('h2');
                 titredescription.textContent = lieux[testi].fields.title;
@@ -63,14 +63,14 @@ let restau = document.getElementById('afficherrestau');
                 divbouton.appendChild(boutonenregistrer);
                 let boutoncroix = document.createElement('img');
                 boutoncroix.id = "croixfermer";
-                boutoncroix.setAttribute('src','../Starter kit/assets/image/Vector (4).png');
+                boutoncroix.setAttribute('src','assets/image/Vector (4).png');
                 divcroix.appendChild(boutoncroix);
 
-                /////////////////////////////////::
+                ////////////////////////////////
                 restau.onclick = function(event) {
                     let target = event.target;
        
-                
+               
                     if (target.id == "croixfermer") {
                         target.parentElement.parentElement.remove();
                     } else if (target.id == "boutonenregistrer") {
