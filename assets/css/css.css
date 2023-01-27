@@ -161,7 +161,6 @@ a:visited {
 #favoris:hover {
     background-color: rgba(231, 46, 46, 0.5); ;
     color: white;
-    
 }
 
 #afficherfav {
@@ -178,7 +177,6 @@ a:visited {
     display: flex;
     
 }
-
 @media only screen and (max-width: 992px) {
 
     #restau {
